@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
     $("#remaining-time").hide();
     $("#start").on('click', trivia.startGame);
     $(document).on('click', '.option', trivia.guessChecker);
@@ -34,7 +33,6 @@ var trivia = {
         q4: 'A Day Without Tears',
     },
 
-    // trivia methods
     // method to initialize game
     startGame: function () {
         // restarting game results
@@ -45,17 +43,11 @@ var trivia = {
         clearInterval(trivia.timerId);
 
         $('#game').show();
-
         $('#results').html('');
-
         $('#timer').text(trivia.timer);
-
         $('#start').hide();
-
         $('#remaining-time').show();
-
         trivia.nextQuestion();
-
     },
 
     nextQuestion: function () {
@@ -78,7 +70,6 @@ var trivia = {
     },
 
     timerRunning: function () {
-
         if (trivia.timer > -1 && trivia.currentSet < Object.keys(trivia.questions).length) {
             $('#timer').text(trivia.timer);
             trivia.timer--;
@@ -100,14 +91,11 @@ var trivia = {
                     '<p>Please play again!</p>');
 
             $('#game').hide();
-
             $('#start').show();
         }
-
     },
 
     guessChecker: function () {
-
         var resultId;
         var currentAnswer = Object.values(trivia.answers)[trivia.currentSet];
         if ($(this).text() === currentAnswer) {
@@ -127,7 +115,6 @@ var trivia = {
     },
 
     guessResult: function () {
-
         trivia.currentSet++;
         $('.option').remove();
         $('#results h3').remove();
