@@ -11,22 +11,33 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
-    <script type="text/javascript" src="assets/javascript/app.js"></script>
-
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
 
 </head>
 
 <body>
-    <header>Spongebob Trivia!</header>
+    <div class="container">
+        <div id="game">
+            <h2>Spongebob Trivia!</h2>
+            <p id="remaining-time" class="lead">Remaining Time: <span id="timer"></span></p>
+            <p id="question" class="lead"></p>
+        </div>
+        <div id="results">
+        </div>
+        <div class="row">
+            <div id="choices" class="text-center">
+                <button id="start" class="btn btn-info btn-lg">Start Game</button>
+                <div id="options">
 
-    <div class="container-fluid">
-        <div id="timer"></div>
-        <div id="questions"></div>
-        <div id=answer></div>
-        <button class="btn btn-success" id="start">Start Game</button><br>
-        <button class="btn btn-success" id="reset">Play Again?</button>
+                </div>
+
+            </div>
+        </div>
+
     </div>
+
 
 
 </body>

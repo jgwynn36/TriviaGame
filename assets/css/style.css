@@ -1,0 +1,23 @@
+body {
+    background-image: url("../images/background.jpeg");
+  }
+
+header {
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    padding: 20px;
+    font-size: 45px;
+}
+#questions {
+    text-align: center;
+    font-weight: bold;
+}
+.container {
+    margin: 10px auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 2px solid #403fd3;
+    height: 500px;
+    width: 60%;
+    text-align: center;
+  }
