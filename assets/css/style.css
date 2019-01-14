@@ -2,14 +2,14 @@ body {
     background-image: url("../images/background.jpeg");
   }
 
-header {
+h2 {
     text-align: center;
     color: white;
     font-weight: bolder;
     padding: 20px;
     font-size: 45px;
 }
-#questions {
+#question {
     text-align: center;
     font-weight: bold;
 }
@@ -21,3 +21,6 @@ header {
     width: 60%;
     text-align: center;
   }
+#options {
+    align-items: center; 
+}
